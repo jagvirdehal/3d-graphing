@@ -1,0 +1,36 @@
+:root {
+    --sidebar-size: 22vw;
+    --sidebar-padding-h: 1vh;
+    --sidebar-padding-w: 1.5vw;
+
+    --sidebar-width: calc(var(--sidebar-size) - 2 * var(--sidebar-padding-w));
+    --sidebar-height: calc(100% - 2 * var(--sidebar-padding-h));
+
+    --sidebar-hr-size: calc(var(--sidebar-size) - 1vw);
+    --sidebar-hr-margin: calc(-1 * var(--sidebar-padding-w) + 0.5vw);
+}
+
+.sidebar {
+    /* width: var(--sidebar-width); */
+    min-width: var(--sidebar-width);
+    height: var(--sidebar-height);
+    padding: var(--sidebar-padding-h) var(--sidebar-padding-w);
+    background-color: var(--background);
+    font-size: 20px;
+}
+
+hr {
+    margin: 10px var(--sidebar-hr-margin);
+    width: var(--sidebar-hr);
+}
+
+span {
+    color: var(--text);
+}
+
+.number-input-group input {
+    text-align: center;
+    border: 3px solid var(--border);
+    border-radius: 8px;
+    margin: 0 5px;
+}

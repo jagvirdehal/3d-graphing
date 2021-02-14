@@ -1,13 +1,14 @@
-import Sidebar from './sidebar';
-import Scene from './scene';
-//
-function App() { //
-    return ( //
-        <div>
+import Sidebar from './sidebar/sidebar';
+import Scene from './scene/scene';
+import './app.css';
+
+function App() {
+    return (
+        <div className="app">
             <Sidebar />
             <Scene />
-        </div> //
-    ); //
-}//
-//
-export default App;//
+        </div>
+    );
+}
+
+export default App;
